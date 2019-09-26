@@ -1,0 +1,913 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+
+
+body{
+    font-family:"sans-serif",Helvetica, Arial;
+
+}
+
+
+.sticky{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-170px;
+    top:230px;
+    width:210px;
+    z-index: 1100;
+   
+}
+
+
+.sticky li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+
+
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:4px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
+
+
+
+.content{
+    width:100%;
+
+
+}  
+
+
+.grid{
+    margin:0 0 0 0;
+    padding:0;
+    list-style:none;
+    display:block;
+    text-align:center;
+    width:100%;
+    overflow:hidden;
+    
+} 
+
+/*.first_Img{overflow:hidden;}*/
+li {
+    overflow:hidden;
+}
+.grid:after{
+    clear:both;
+}
+
+.grid:after, .col_main:before {/*content:'';*/
+    display:table;
+}
+
+.grid li {
+    width:370px;
+    height:328px;
+    display:inline-block;
+    margin:0px;
+}
+
+li.first_Img{
+    width:600px;
+    display:inline-block;
+}
+li.second_Img{
+    width:600px;
+    display:inline-block;
+}
+li.third_Img{
+    width:600px;
+    display:inline-block;
+}
+li.fourth_Img{
+    width:600px;
+    display:inline-block;
+}
+
+.col_main {
+    width:100%;
+    height:100%;
+    position:relative;
+    cursor:pointer;
+    border-radius:5%;
+    -webkit-transition: 0.3s ease-in-out, 
+    -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out, 
+    -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out, 
+    transform 0.3s ease-in-out, ;
+    
+    
+}
+
+
+
+.col_main:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;  
+
+    }
+
+
+.header {
+    position:relative;
+    width:100%;
+}
+
+
+
+
+.text_header{
+    position:absolute;
+    top:30%;
+    width:100%;
+    font-size:20px;    
+    text-align:center;
+    color:white;
+}
+
+
+
+
+
+
+#About{
+    background-image:url(../Img/about.jpeg) ;
+    background-position:center ;  
+    background-size:cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;  
+    overflow:hidden;
+    
+}
+
+#About:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;  
+    filter: brightness(70%);
+}
+
+#About p{
+    visibility:hidden;
+}
+#About:hover p{
+    visibility:visible;
+}
+
+
+#About .text{
+    margin-top:80px;
+    margin-left:-90px;
+    display:inline-block;
+}
+
+#About p {
+    margin-left:0%;
+    text-align:center;
+    width:100%;
+}
+
+
+#Romania {
+    background-image:url(../Img/Romania.jpeg);
+    background-size:cover;
+    background-position:center;
+    min-height:100%;
+    opacity:1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;  
+}
+
+#Romania:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;
+    filter: brightness(70%);
+}
+
+#Romania .text{
+    margin-top:80px;
+    margin-left:-110px;
+    display:inline-block;
+}
+
+#Romania p{
+    visibility:hidden;
+    margin-left:-3%;
+    text-align:center;
+    width:100%;
+    
+    
+}
+#Romania:hover p{
+    visibility:visible;
+}
+
+
+
+#France {
+    background-image:url(../Img/france.jpeg);
+    background-size:cover;
+    background-position:center;
+    min-height:100%;
+    opacity:1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    
+    
+    
+}
+
+#France:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium; 
+    filter: brightness(70%);
+}
+#France .text{
+    margin-top:80px;
+    margin-left:-110px;
+    display:inline-block;
+}
+
+#France p{
+    visibility:hidden;
+    margin-left:0%;
+    text-align:center;
+    width:100%;
+}
+
+#France:hover p{
+    visibility:visible;
+}
+
+
+
+#Switzerland {
+    background-image:url(../Img/switzerland.jpeg);
+    min-height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    }
+
+#Switzerland:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium; 
+    filter: brightness(70%);
+}
+#Switzerland .text{
+    margin-top:80px;
+    margin-left:-85px;
+    display:inline-block;
+}
+
+
+#Switzerland p{
+    visibility:hidden;
+    margin-left:-3%;
+    text-align:center;
+    width:100%;
+    
+}
+#Switzerland:hover p{
+    visibility:visible;
+}
+
+
+
+#Italy {
+    background-image:url(../Img/italy.jpeg) ;
+    min-height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    }
+
+#Italy:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;
+    filter: brightness(70%);
+}
+
+#Italy .text{
+    margin-top:80px;
+    margin-left:-70px;
+    display:inline-block;
+}
+
+
+#Italy p{
+    visibility:hidden;
+    margin-left:0%;
+    text-align:center;
+    width:100%;
+    
+}
+#Italy:hover p{
+    visibility:visible;
+}
+
+
+
+#India {
+    background-image:url(../Img/india.jpg);
+    min-height:100%;
+    opacity:1;
+    background-size:cover;
+    background-position:center;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    }
+
+#India:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;
+    filter: brightness(70%);
+}
+
+#India .text{
+    margin-top:80px;
+    margin-left:-210px;
+    display:inline-block;    
+}
+
+#India p{
+    visibility:hidden;
+    margin-left:0%;
+    text-align:center;
+    width:100%;
+    
+}
+
+#India:hover p{
+    visibility:visible;
+}
+
+
+
+
+#Spain {
+    background-image:url(../Img/spain.jpeg);
+    min-height:100%;
+    opacity:1;
+    background-size:cover;
+    background-position:center;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    }
+
+#Spain:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;
+    filter: brightness(70%);
+}
+#Spain .text{
+    margin-top:80px;
+    margin-left:-230px;
+    display:inline-block;
+}
+
+
+#Spain p{
+    visibility:hidden;
+    margin-left:0%;
+    text-align:center;
+    width:100%;
+    }
+
+#Spain:hover p{
+    visibility:visible;
+}
+
+
+
+#Usa {
+    background-image:url(../Img/usa.jpeg) ;
+    min-height:100%;
+    opacity:1;
+    background-size:cover;
+    background-position:center;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    
+    }
+
+#Usa:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium; 
+    filter: brightness(70%);
+}
+
+#Usa .text{
+    margin-top:80px;
+    margin-left:-115px;
+    display:inline-block;
+}
+
+#Usa p{
+    visibility:hidden;
+    margin-left:0%;
+    text-align:center;
+    width:100%;
+}
+
+#Usa:hover p{
+    visibility:visible;
+}
+
+
+
+
+#Norway {
+    background-image:url(../Img/norway.jpeg) ;
+    min-height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    }
+
+#Norway:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;
+    filter: brightness(70%);
+}
+
+#Norway .text{
+    margin-top:80px;
+    margin-left:-110px;
+    display:inline-block;
+}
+#Norway p{
+    visibility:hidden;
+    margin-left:0%;
+    text-align:center;
+    width:100%;
+}
+
+#Norway:hover p{
+    visibility:visible;
+}
+
+
+#Uk {
+    background-image:url(../Img/Uk.jpeg);
+    min-height:100%;
+    opacity:1;
+    background-size:cover;
+    background-position:center;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    }
+
+#Uk:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium; 
+    filter: brightness(70%);
+}
+
+#Uk .text{
+    margin-top:80px;
+    margin-left:-120px;
+    display:inline-block;    
+}
+
+#Uk p{
+    visibility:hidden;
+    margin-left:-3%;
+    text-align:center;
+    width:100%;
+}
+
+#Uk:hover p{
+    visibility:visible;
+}
+
+
+
+#Netherlands {
+    background-image:url(../Img/netherlands.jpeg) ;
+    min-height:100%;
+    opacity:1;
+    background-size:cover;
+    background-position:center;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    }
+
+#Netherlands:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;
+    filter: brightness(70%);
+}
+
+#Netherlands .text{
+    margin-top:80px;
+    margin-left:-130px;
+    display:inline-block;    
+}
+
+#Netherlands p{
+    visibility:hidden;
+    margin-left:-3%;
+    text-align:center;
+    width:100%;
+}
+
+#Netherlands:hover p{
+    visibility:visible;
+}
+
+
+
+#Sky {
+    background-image:url(../Img/Sky.jpeg);
+    min-height:100%;
+    opacity:1;
+    background-size:cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    filter: brightness(90%);
+    outline:1px solid grey;
+    outline-offset:-20px;
+    outline-width:medium;
+    }
+
+#Sky:hover{
+    opacity: 0.8;
+    transform: scale(1.1);
+    overflow:hidden;
+    outline:6px solid black;
+    outline-offset:-40px;
+    outline-width:medium;
+    filter: brightness(70%);
+}
+#Sky .text{
+    margin-top:80px;
+    margin-left:-100px;
+    display:inline-block;
+}
+
+#Sky p{
+    visibility:hidden;
+    margin-left:-3%;
+    text-align:center;
+    width:100%;
+}
+
+#Sky:hover p{
+    visibility:visible;
+}
+
+
+
+.text {
+    position:absolute;
+    width:inherit;
+    height:inherit;
+    color:white;
+}
+
+.text h3{
+    font-weight:400;
+    color:white;
+    font-size:42px;
+    margin-left:250px;    
+    padding:50px 0 0 0;
+    line-height:1.5;
+}
+
+.text p{
+    color:white;
+    font-style:italic;
+    font-weight:bold;
+    padding:4px 5px;
+    margin-left:200px;
+    font-size:17px;
+    line-height:2;
+} 
+
+
+
+
+
+
+
+@media only screen and (max-width:1300px){
+    .header img{
+        width:100%;
+        height:auto;
+    }
+    
+}
+
+
+@media only screen and (max-width:760px){
+    
+    .grid li{
+        width:100%;
+        display:block;
+        padding-bottom:5px;
+        padding-top:5px;
+    }
+    
+    
+  
+    
+    .text_header{
+        width:100%;
+        text-align:center;
+        font-size:17px;
+        margin-top:-28px; 
+        
+    }
+}
+
+
+
+@media only screen and (max-width:370px){
+    .header img{
+        height:390px;
+    }
+    .text_header h1{
+        font-size:25px;
+     }
+    .text_header p{
+        margin-top:10px;
+        font-weight:bolder;
+    }
+    .text_header {
+        margin-top:25%;}
+    
+    
+   #About:hover{
+        outline-offset:0px;
+    }
+    
+    #Romania .text h1{
+        margin-left:20px;
+    }
+    #Romania .text p{
+        margin-left:-0px;
+        display:block;
+    }
+    
+    
+    #Romania:hover{
+        outline-offset:0px;
+    }
+    
+    
+    
+    #France .text h1{
+        margin-left:-18px;
+    }
+    #France .text p{
+        margin-left:-6px;
+        display:block;
+    }
+    #France:hover{
+        outline-offset:0px;
+    }
+    
+    
+    
+    #Switzerland .text h1{
+        margin-left:-5px;
+    }
+    #Switzerland .text p{
+        margin-left:-8px;
+    }
+    #Switzerland:hover{
+        outline-offset:0px;
+    }
+    
+    
+    
+    #Italy .text h1{
+        margin-left:-10px;
+    }
+    #Italy .text p{
+        margin-left:-10px;
+    }
+    #Italy:hover{
+        outline-offset:0px;
+    }
+    
+    
+    #India:hover{
+        outline-offset:0px;
+    }
+    
+    #India .text h1{
+        margin-left:20%;
+    }
+    #India .text p{
+        width:50%;
+        margin-left:35%;
+        font-size:15px;
+        text-align:center;
+    }
+    
+    #Usa .text h1{
+        margin-left:10px;
+    }
+    
+    
+    #Usa:hover{
+        outline-offset:0px;
+    }
+    
+    #Uk {
+        width:100%;
+    }
+    #Uk h1{
+        display:block;
+        width:60%;
+        margin-left:21%;
+    }
+    #Uk .text p{
+        margin-left:-5px;
+    }
+     #Uk:hover{
+        outline-offset:0px;
+    }
+    
+    #Norway .text h1{
+        margin-left:10px;
+    }
+    #Norway .text p{
+        margin-left:-5px;
+    }
+    #Norway:hover{
+        outline-offset:0px;
+    }
+    
+    #Spain:hover{
+        outline-offset:0px;
+    }
+    
+    #Spain .text h1{
+        margin-left:27%;
+    }
+    #Spain .text p{
+        width:58%;
+        margin-left:35%;
+        font-size:15px;
+        text-align:center;
+    }
+    
+    
+    #Netherlands .text h1{
+        margin-left:5px;
+    }
+    #Netherlands .text p{
+        margin-left:20px;
+        display:block;
+        width:80%;
+    }
+    #Netherlands:hover{
+        outline-offset:0px;
+    }
+    
+    #Netherlands:hover{
+        outline-offset:0px;
+    }
+    
+    #Sky:hover{
+        outline-offset:0px;
+    }
+    
+    .sticky{
+        top:0px;
+    
+    }
+}
